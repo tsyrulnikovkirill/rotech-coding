@@ -128,8 +128,7 @@ def animate(i):
     patch.set_x(xs[i] - cart_width/2)
     return line, time_text, patch
 
-ani = animation.FuncAnimation(fig, animate, np.arange(1, len(solution)),
-                              interval=25, blit=True, init_func=init)
+ani = animation.FuncAnimation(fig, animate, np.arange(1, len(solution)), interval=25, blit=True, init_func=init)
 
 pp.show()
 
